@@ -10,7 +10,7 @@
   <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <div class="container">
         <a href="index.html" class="navbar-brand">
           WebsiteOne
@@ -39,6 +39,7 @@
     </nav>
 
     <!-- HOME -->
+     <div data-spy="scroll" data-target="#navbar">
     <header id="home-section">
       <div class="dark-overlay">
         <div class="home-inner">
@@ -214,14 +215,16 @@
         </div>
       </div>
     </section>
-
+    </div>
     <!-- FOOTER -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12 p-5">
             <!--Footer Bottom-->
-            <p class="text-center">&copy; Copyright 2016 - City of USA.  All rights reserved.</p>
+            <p class="text-center">&copy; Copyright <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script> - City of USA.  All rights reserved.</p>
           </div>
         </div>
       </div>
